@@ -80,7 +80,7 @@ function heatmap_kNN(Xtrain, ytrain, kN, label)
 
     xlabel('X Axis')
     ylabel('Y Axis')
-    title(sprintf('Probility of %dNN(y = %d|x) Heat Map', kN, label))
+    title(sprintf('Probability of %dNN(y = %d|x) Heat Map', kN, label))
 end
 
 function labelmap_kNN(Xtrain, ytrain, kN)
@@ -105,4 +105,5 @@ function labelmap_kNN(Xtrain, ytrain, kN)
     xlabel('X Axis')
     ylabel('Y Axis')
     title(sprintf('h%dNN(x) classifier decision regions', kN))
+    legend('Class 1','Class 2','Class 3')
 end
