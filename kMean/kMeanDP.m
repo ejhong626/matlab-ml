@@ -3,7 +3,7 @@
 
 %% Intialization
 clc, clear, close all
-load("NBA_dat.mat")
+load("dataset\NBA_dat.mat")
 NBA_MPG = NBA_dat(:,5);
 NBA_PPG = NBA_dat(:,7);
 

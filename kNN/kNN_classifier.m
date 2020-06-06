@@ -3,7 +3,7 @@
 
 %% Intialization
 clc, clear
-load("data_knnSimulation.mat")
+load("dataset\data_knnSimulation.mat")
 
 %% Plotting Dataset
 gscatter(Xtrain(:,1),Xtrain(:,2),ytrain)

@@ -3,8 +3,8 @@
 
 %% Intialization
 clc, clear
-load("data_mnist_train.mat");
-load("data_mnist_test.mat");
+load("dataset\data_mnist_train.mat");
+load("dataset\data_mnist_test.mat");
 
 [Ntrain, dims] = size(X_train);
 [Ntest, ~] = size(X_test);

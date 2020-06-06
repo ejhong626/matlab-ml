@@ -3,7 +3,7 @@ The following folder has 2 implementation of the k-mean clustering algorithm in 
 
 ## Technical Summary
 ### kClusterMean.m
-The dataset has 3 clusters with different means and variances that is generated using normal random distribution. The clusters are spread intentionally.
+The dataset has 3 clusters with different means and variances that is generated using normal random distribution. The clusters are spread intentionally.  
 ![Scatter Plot](graphics/scatter.jpg)
 
 A function **kMean** takes the given dataset and tries to create **N** clusters by seeding **N** cluster means in the dataset. The function then does kMeans and finds the closest points to the cluster and shift towards the cluster's true mean. This is done in a while loop to constantly shift cluster means until the shift is less than the specified **threshold**. The following shows the 3 cluster dataset fitted with K = 3, K = 10.
