@@ -3,10 +3,10 @@ The following folder has an implementation of the Linear Discriminant Analysis (
 
 ## Technical Summary
 ### LDA.m
-The dataset has 2 clusters with different means and variances that is generated using Gaussian random distribution. The two clusters are rotated by π/6.
+The dataset has 2 clusters with different means and variances that is generated using Gaussian random distribution. The two clusters are rotated by π/6.  
 ![Scatter Plot](graphics/scatter.jpg)
 
-The function **gaussian2D** is used to generate the dataset, the following are its inputs & outputs:
+The function **gaussian2D** is used to generate the dataset, the following are its inputs & outputs:  
 **Input**
 * n1 = number of class 1 examples
 * n2 = number of class 2 examples
@@ -28,9 +28,10 @@ Density estimate for phi = 0  |Density estimate for phi = π/6|Density estimate 
 :----------------------------:|:----------------------------:|:----------------------------:
 ![](graphics/den_est_0.jpg)   |![](graphics/den_est_1.jpg)   |![](graphics/den_est_2.jpg)
 
-Using **LDA2D**, the function finds the optimal line to best separate the two classes, optimal would mean maximizing signal and minimizing noise. The optimal line of separation is plotted with a vector directed at the means of two classes.
-![SNR Plot](graphics/LDA.jpg)
+Using **LDA2D**, the function finds the optimal line to best separate the two classes, optimal would mean maximizing signal and minimizing noise. The optimal line of separation is plotted with a vector directed at the means of two classes.  
+![SNR Plot](graphics/LDA.jpg)  
+
 Intuitively, one may assume that the line of separation is to align with mean of both clusters; however, the variance in the dataset makes it so that is not the case, as shown from the orange and purple lines.
 
-Once the direction of the separating line is decided, the "best" y intercept of the line is decided by using the midpoint of all the casted points as possible candidates. The y-intercept is used to evalute the performance of the line with **compute_ccr**, the highest CCR is the "best" y-intercept.
+Once the direction of the separating line is decided, the "best" y intercept of the line is decided by using the midpoint of all the casted points as possible candidates. The y-intercept is used to evalute the performance of the line with **compute_ccr**, the highest CCR is the "best" y-intercept.  
 ![SNR Plot](graphics/ccr.jpg)
